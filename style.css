@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffb400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+/* Underline only "up" */
+.logo .underline {
+  text-decoration: underline;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li {
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ================= INTRO SECTION ================= */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.intro-left {
+  max-width: 600px;
+}
+
+/* Heading */
+.intro-left h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+/* Paragraph (NORMAL SIZE) */
+.intro-left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+/* Jeff Image */
+.intro-right img {
+  width: 697px;
+  height: 482px;
+  object-fit: cover;
+}
+
+/* ================= BUTTONS (NORMAL SIZE) ================= */
+.btn {
+  background-color: #ffb400;
+  border: none;
+  border-radius: 30px;
+
+  padding: 10px 24px;      /* ✅ normal button size */
+  font-weight: 600;
+  font-size: 16px;         /* ✅ normal text size */
+  color: black;
+
+  cursor: pointer;
+}
+
+/* ================= CONTACT SECTION ================= */
+.contact {
+  padding: 40px;
+}
+
+.contact h2 {
+  color: #ffb400;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center submit button */
+.contact form .btn {
+  align-self: center;
+}
+
+/* Inputs */
+.contact input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: black;
+  border: 1px solid #ffb400;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+}
+
+.contact input:focus {
+  outline: none;
+}
+
+.contact .row {
+  display: flex;
+  gap: 20px;
+}
+
+/* ================= TABLE SECTION ================= */
+.table-section {
+  padding: 40px;
+}
+
+/* Table base */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ffb400;   /* outer border */
+  color: #ffb400;              /* yellow-orange text */
+}
+
+/* Header */
+thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 400;
+
+  border-left: 1px solid #ffb400;
+  border-right: 1px solid #ffb400;
+  border-bottom: 2px solid #ffb400; /* only horizontal line */
+}
+
+/* Body cells */
+tbody td {
+  padding: 12px;
+  font-weight: 400;
+
+  border-left: 1px solid #ffb400;
+  border-right: 1px solid #ffb400;
+  border-top: none;
+  border-bottom: none;
+}
+
+/* Footer row */
+tfoot {
+  background-color: #ffb400;
+}
+
+/* Footer cells — BLACK column lines */
+tfoot td {
+  padding: 12px;
+  color: black;
+  font-weight: 400;
+
+  border-left: 1px solid black;   
+  border-right: 1px solid black;
+  border-top: 1px solid #ffb400;
+}
